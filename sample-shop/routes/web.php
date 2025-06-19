@@ -7,6 +7,7 @@ use App\Http\Controllers\{
     CartController,
     OrderController,
     UserController,
+    ContactController,
 };
 
 Auth::routes();
@@ -30,3 +31,15 @@ Route::middleware('auth')->group(function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');
+
+Route::resource('products', ProductController::class);
+
+Route::get('/home', function () {
+    return view('home');
+});
