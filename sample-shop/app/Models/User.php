@@ -9,4 +9,10 @@ class User extends Authenticatable {
     use Notifiable;
 
     protected $fillable = ['name', 'email', 'password', 'role'];
+   
+        public function profile() {
+
+     return $this->hasOne(Profile::class);
+    }
 }
+

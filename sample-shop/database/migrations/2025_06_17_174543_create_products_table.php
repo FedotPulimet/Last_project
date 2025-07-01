@@ -9,19 +9,24 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
-        Schema::create('products', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
-    }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('products');
-    }
+    public function up()
+{
+
+    Schema::table('products', function (Blueprint $table) {
+        $table->string('name')->after('id'); 
+        $table->text('description')->nullable();
+        $table->decimal('price', 10, 2);
+        $table->string('image');
+    });
+}
+
+public function down()
+{
+    Schema::table('products', function (Blueprint $table) {
+        $table->dropColumn(['name', 'description', 'price', 'image']);
+    });
+}
+
 };
+

@@ -8,6 +8,8 @@ use App\Http\Controllers\{
     OrderController,
     UserController,
     ContactController,
+    ProfileController,
+    HomeController,
 };
 
 Auth::routes();
@@ -42,4 +44,12 @@ Route::resource('products', ProductController::class);
 
 Route::get('/home', function () {
     return view('home');
+
+Route::middleware(['auth'])->group(function () {
+   
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+
+    Route::get('/', [HomeController::class, 'index']);
+});
 });
