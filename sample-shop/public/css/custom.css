@@ -13,6 +13,8 @@ body {
     padding: 20px;
 }
 
+
+
 h1 {
     text-align: center !important;
     background-color: bisque !important;
@@ -99,4 +101,20 @@ p {
 
 .btn:hover {
     background-color: #2980b9; 
+}
+
+.product-list {
+    text-align: center;
+    border-radius: 20px;
+    padding-left: 430px;
+}
+
+.product-card {
+    font-size: 60px;
+}
+
+a {
+    background-color: #a4ece0;
+    border-radius: 30px;
+    font-size: 30px !important;
 }

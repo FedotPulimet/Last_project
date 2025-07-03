@@ -6,10 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-
+   
     public function up()
 {
 
@@ -18,6 +15,8 @@ return new class extends Migration
         $table->text('description')->nullable();
         $table->decimal('price', 10, 2);
         $table->string('image');
+        $table->text('author')->nullable();
+        
     });
 }
 

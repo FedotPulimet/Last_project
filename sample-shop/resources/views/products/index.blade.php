@@ -11,8 +11,10 @@
         <div class="product-card" style="border:1px solid #ccc; padding:10px; width:200px;">
             <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" style="width:100%; height:auto;">
             <h3>{{ $product->name }}</h3>
+            <p>Автор: {{ $product->author }}</p>
             <p>{{ $product->description }}</p>
             <p>Цена: {{ number_format($product->price, 2, ',', ' ') }} руб.</p>
+            
         </div>
     @endforeach
 </div>
@@ -29,28 +31,9 @@
     @if($products->isEmpty())
         <p>Товары не найдены.</p>
     @else
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach($products as $product)
-                <div class="col">
-                    <div class="card h-100">
-                        @if($product->image)
-                            <img src="{{ asset('storage/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}">
-                        @else
-                            <img src="{{ asset('images/no-image.png') }}" class="card-img-top" alt="Нет изображения">
-                        @endif
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">{{ $product->name }}</h5>
-                            <p class="card-text">{{ Str::limit($product->description, 100) }}</p>
-                            <p class="mt-auto"><strong>Цена:</strong> {{ number_format($product->price, 2, ',', ' ') }} ₽</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between">
-                            <a href="{{ route('products.show', $product->id) }}" class="btn btn-sm btn-outline-primary">Подробнее</a>
-                            {{-- Можно добавить кнопку "Купить" или "В корзину" --}}
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
+
+
+
 
         {{-- Пагинация --}}
         {{ $products->links() }}

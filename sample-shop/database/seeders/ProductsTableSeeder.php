@@ -11,16 +11,19 @@ class ProductsTableSeeder extends Seeder
     {
         Product::create([
             'name' => 'Картина "Морской пейзаж"',
+            'author' => 'Летова Екатерина Сергеевна',
             'description' => 'Красочная картина с морским пейзажем.',
             'price' => 1500.00,
-            'image' => 'images/products/morskoy-peizhas.jpg'
+            'image' => 'images/products/morskoy-peizhas.jpg',
         ]);
 
         Product::create([
             'name' => 'Картина "Городская ночь"',
+            'author' => 'Летова Екатерина Сергеевна',
             'description' => 'Современная картина ночного города.',
             'price' => 2000.00,
-            'image' => 'images/products/nochnoy-gorod.jpg'
+            'image' => 'images/products/nochnoy-gorod.jpg',
+            
         ]);
     }
 }
