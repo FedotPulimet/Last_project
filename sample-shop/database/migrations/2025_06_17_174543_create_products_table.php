@@ -13,7 +13,8 @@ return new class extends Migration
     Schema::table('products', function (Blueprint $table) {
         $table->string('name')->after('id'); 
         $table->text('description')->nullable();
-        $table->decimal('price', 10, 2);
+        $table->decimal('leght');
+        $table->decimal('price', 15, 2);
         $table->string('image');
         $table->text('author')->nullable();
         

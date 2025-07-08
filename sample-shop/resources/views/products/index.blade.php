@@ -13,6 +13,7 @@
             <h3>{{ $product->name }}</h3>
             <p>Автор: {{ $product->author }}</p>
             <p>{{ $product->description }}</p>
+            <p>Размер: {{ $product->leght }}</p>
             <p>Цена: {{ number_format($product->price, 2, ',', ' ') }} руб.</p>
             
         </div>
