@@ -12,7 +12,7 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Картина "Санкт-Питербург"',
             'author' => 'Летова Екатерина Сергеевна',
-            'description' => 'Красивая картина передающая всю атмосферу города.',
+            'description' => 'холст, акрил',
             'leght' => '40/70',
             'price' => 5500.00,
             'image' => 'images/products/Saint-petersburg.jpg',
@@ -21,7 +21,7 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Картина "Греческие развалины"',
             'author' => 'Летова Екатерина Сергеевна',
-            'description' => 'Картина показывающая необычные развалины древней Греции.',
+            'description' => 'холст, акрил, текстурная паста',
             'leght' => '20/35',
             'price' => 4000.00,
             'image' => 'images/products/grecheskie-razvalini.jpg',
@@ -31,7 +31,7 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Картина "Деревья Абхазии"',
             'author' => 'Летова Екатерина Сергеевна',
-            'description' => 'Картина показывает необыкновенные красоты природы Абхазии.',
+            'description' => 'бумага, акрил, линер',
             'leght' => '20/30',
             'price' => 7000.00,
             'image' => 'images/products/derevia-abxazii.jpg',
@@ -41,7 +41,7 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Картина "Зимнее утро"',
             'author' => 'Летова Екатерина Сергеевна',
-            'description' => 'Картина показывает раннее утро во время холодной зимы.',
+            'description' => 'холст, акрил',
             'leght' => '40/60',
             'price' => 3500.00,
             'image' => 'images/products/zimnee-ytro.jpg',
@@ -51,7 +51,7 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Картина "Старый парк"',
             'author' => 'Летова Екатерина Сергеевна',
-            'description' => 'Старый парк который расположен в Екатеринбурге.',
+            'description' => 'бумага, акриль, пастель',
             'leght' => '30/30',
             'price' => 6000.00,
             'image' => 'images/products/starie-park.jpg',
@@ -61,7 +61,7 @@ class ProductsTableSeeder extends Seeder
          Product::create([
             'name' => 'Картина "Весна"',
             'author' => 'Летова Екатерина Сергеевна',
-            'description' => 'Картина показывает двух белых голубей во время весны.',
+            'description' => 'холст, акрил',
             'leght' => '50/70',
             'price' => 9500.00,
             'image' => 'images/products/Priroda.jpg',
@@ -71,7 +71,7 @@ class ProductsTableSeeder extends Seeder
          Product::create([
             'name' => 'Картина "Море"',
             'author' => 'Летова Екатерина Сергеевна',
-            'description' => 'Яркая картина выполненная в красивых красках и показывающая море.',
+            'description' => 'холст, текстурная краска, пастель',
             'leght' => '30/40',
             'price' => 10500.00,
             'image' => 'images/products/more.jpg',
@@ -81,7 +81,7 @@ class ProductsTableSeeder extends Seeder
          Product::create([
             'name' => 'Картина "Спящая"',
             'author' => 'Летова Екатерина Сергеевна',
-            'description' => 'Необычная картина на которой изображенна гора которая похожа на спящую девушку.',
+            'description' => 'холст, акриль, пастельная краска',
             'leght' => '90/120',
             'price' => 10500.00,
             'image' => 'images/products/spachaia.jpg',

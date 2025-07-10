@@ -52,4 +52,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/', [HomeController::class, 'index']);
 });
+
+    Route::get('/order/{painting}', [OrderController::class, 'show'])->name('order.show');
+    Route::post('/order/{painting}', [OrderController::class, 'submit'])->name('order.submit');
+    
 });

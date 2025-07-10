@@ -3,62 +3,32 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Painting;
 
 class OrderController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    public function show($id)
     {
-        //
+        $painting = Painting::findOrFail($id);
+        return view('order.form', compact('painting'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function submit(Request $request, $id)
     {
-        //
-    }
+        // Обработка данных формы оплаты
+        // Например, сохранить заказ, провести платеж и т.д.
+        // Для примера просто покажем сообщение
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+        // Валидация данных
+        $validated = $request->validate([
+            'phone' => 'required|string',
+            'postal_office' => 'required|string',
+            'card_number' => 'required|string',
+            // добавьте другие поля по необходимости
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
+        // Тут должна быть логика платежа и сохранения заказа
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        return redirect()->route('thankyou')->with('success', 'Заказ оформлен!'); 
     }
 }

@@ -117,3 +117,21 @@ a {
     border-radius: 30px;
     font-size: 30px !important;
 }
+
+h4 {
+    text-align: center;
+    font-size: 65px !important;
+    padding-top: 180px;
+    font-family: serif !important;
+}
+
+.bg-white {
+    background-color: bisque !important;
+}
+
+button {
+    font-size: 40px !important;
+    border-radius: 30px !important;
+    font-family: serif !important;
+    background-color: #cee2f0;
+}
