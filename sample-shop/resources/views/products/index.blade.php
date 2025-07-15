@@ -15,11 +15,14 @@
             <p> {{ $product->description }}</p>
             <p>Размер: {{ $product->leght }}</p>
             <p>Цена: {{ number_format($product->price, 2, ',', ' ') }} руб.</p>
+
+            <form action="{{ route('order.form') }}" method="GET" style="display:inline;">
             <button type="submit">Заказать картину</button>
-            
+            </form>
         </div>
     @endforeach
 </div>
+
 
     {{-- Кнопка для добавления нового товара (если есть права) --}}
     {{-- <a href="{{ route('products.create') }}" class="btn btn-primary mb-3">Добавить товар</a> --}}

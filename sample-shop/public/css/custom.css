@@ -26,6 +26,8 @@ h1 {
 p {
     text-align: center;
     font-size: 18px;
+    background-color: bisque;
+    border-radius: 20px;
 }
 
 
@@ -115,7 +117,7 @@ p {
 a {
     background-color: #a4ece0;
     border-radius: 30px;
-    font-size: 30px !important;
+    font-size: 20px !important;
 }
 
 h4 {
@@ -134,4 +136,35 @@ button {
     border-radius: 30px !important;
     font-family: serif !important;
     background-color: #cee2f0;
+}
+
+.nav-link {
+   font-size: 20px !important;
+   background-color: #d1ecee !important;
+   border-radius: 10px !important;
+}
+
+h2 {
+    text-align: center !important;
+    font-size: 30px !important;
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+label {
+    text-align: center  !important;
+    font-size: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    font-family: serif;
+}
+
+form {
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 150px;
+}
+
+input {
+    width: 800px;
 }

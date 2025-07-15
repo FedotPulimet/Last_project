@@ -1,6 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+  Route::get('/order', function () {
+    return view('order.form');
+})->name('order.form');
+
+Route::post('/order', function (Request $request) {
+    return redirect()->route('products.index')->with('success', 'Оплата прошла успешно!');
+})->name('order.submit');
+
 use App\Http\Controllers\{
     AuthController,
     ProductController,
@@ -10,6 +19,7 @@ use App\Http\Controllers\{
     ContactController,
     ProfileController,
     HomeController,
+    PaintingController,
 };
 
 Auth::routes();
@@ -17,6 +27,7 @@ Auth::routes();
 Route::get('/', [ProductController::class, 'index'])->name('home');
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/products', [PaintingController::class, 'index'])->name('products.index');
 
 Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
 
@@ -53,7 +64,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/', [HomeController::class, 'index']);
 });
 
-    Route::get('/order/{painting}', [OrderController::class, 'show'])->name('order.show');
-    Route::post('/order/{painting}', [OrderController::class, 'submit'])->name('order.submit');
-    
+  
 });
+
