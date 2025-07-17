@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 })->name('order.form');
 
 Route::post('/order', function (Request $request) {
-    return redirect()->route('products.index')->with('success', 'Оплата прошла успешно!');
+    return redirect()->route('products.index')->with('success' );
 })->name('order.submit');
 
 use App\Http\Controllers\{

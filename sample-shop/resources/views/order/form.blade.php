@@ -1,20 +1,18 @@
 
-
  <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 <h2>Оформление заказа</h2>
-
 <form action="{{ route('order.submit') }}" method="POST">
     @csrf
-    <label for="phone">Номер телефона:</label><br>
-    <input type="text" id="phone" name="phone" required><br><br>
+    <h2>Для того чтобы приобрести картину выбирите один из удобных вам вариантов</h2>
 
-    <label for="postal_office">Почтовое отделение:</label><br>
-    <input type="text" id="postal_office" name="postal_office" required><br><br>
+    <h2>1. Связаться с автором картин по WhatsApp или Telegram: </h2>
+    <p>Номер телефона: + 7 906-062-41-23</p>
+    
+    <h2>2. Написать на почту: </h2>
+    <p>Почта: zhfedor33@gmail.com</p>
 
-    <label for="card_number">Номер карты:</label><br>
-    <input type="text" id="card_number" name="card_number" required><br><br>
 
-   
-
-    <button type="submit">Произвести оплату</button>
 </form>
+
+<h3>Спасибо за то что выбрали наш магазин!</h3>
+

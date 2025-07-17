@@ -17,7 +17,7 @@ body {
 
 h1 {
     text-align: center !important;
-    background-color: bisque !important;
+    background-color: rgb(253, 199, 134) !important;
     border-radius: 20px;
     font-family: serif;
     font-size: 40px;
@@ -25,8 +25,8 @@ h1 {
 
 p {
     text-align: center;
-    font-size: 18px;
-    background-color: bisque;
+    font-size: 20px;
+    background-color:  rgb(194, 183, 153);
     border-radius: 20px;
 }
 
@@ -147,24 +147,30 @@ button {
 h2 {
     text-align: center !important;
     font-size: 30px !important;
-    background-color: bisque;
+    background-color: rgb(255, 181, 91);
     border-radius: 20px;
 }
 
-label {
-    text-align: center  !important;
-    font-size: 30px;
-    background-color: bisque;
-    border-radius: 10px;
-    font-family: serif;
-}
+
 
 form {
     text-align: center;
-    background-color: lightblue;
     margin-top: 150px;
 }
 
 input {
     width: 800px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: serif;
+    margin-top: 100px;
+    background-color: #c9c9c9;
+    border-radius: 560px;
+}
+
+body {
+  background: linear-gradient(to bottom right, bisque, #a4ece0);
 }

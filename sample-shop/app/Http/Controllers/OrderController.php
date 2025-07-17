@@ -13,8 +13,4 @@ class OrderController extends Controller
         return view('order.form', ['painting_id' => $painting_id]);
     }
 
-    public function pay(Request $request, $painting_id)
-    {
-        return redirect()->route('products.index')->with('success', 'Оплата прошла успешно!');
-    }
 }
