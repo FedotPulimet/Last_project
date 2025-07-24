@@ -2,13 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-  Route::get('/order', function () {
+
+Route::get('/order', function () {
     return view('order.form');
 })->name('order.form');
 
 Route::post('/order', function (Request $request) {
     return redirect()->route('products.index')->with('success' );
 })->name('order.submit');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
 use App\Http\Controllers\{
     AuthController,

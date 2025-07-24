@@ -17,7 +17,7 @@ body {
 
 h1 {
     text-align: center !important;
-    background-color: rgb(253, 199, 134) !important;
+    background-color: rgb(255, 255, 255) !important;
     border-radius: 20px;
     font-family: serif;
     font-size: 40px;
@@ -93,16 +93,19 @@ p {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #3498db; 
+    margin-top: 80px;
+    background-color: #64baf3 !important; 
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
+    text-align: center !important;
+    margin-left: 450px;
+    width: 400px;
 }
 
 .btn:hover {
-    background-color: #2980b9; 
+    background-color: #57b0f0; 
 }
 
 .product-list {
@@ -111,7 +114,7 @@ p {
 }
 
 .product-card {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 a {
@@ -123,8 +126,10 @@ a {
 h4 {
     text-align: center;
     font-size: 65px !important;
-    padding-top: 180px;
+    margin-top: 280px;
     font-family: serif !important;
+    background-color: bisque;
+    border-radius: 30px;
 }
 
 .bg-white {
@@ -173,4 +178,13 @@ h3 {
 
 body {
   background: linear-gradient(to bottom right, bisque, #a4ece0);
+}
+
+card-body {
+    width: 100px;
+}
+
+form-check {
+    text-align: center;
+    padding-right: 20px !important;
 }

@@ -8,7 +8,7 @@
     <h1 class="mb-4">Каталог товаров</h1>
     <div class="product-list" style="display:flex; flex-wrap:wrap; gap:90px; border-radius: 30px; ">
     @foreach($products as $product)
-        <div class="product-card" style="border:1px solid #ccc; padding:30px; width:600px; background-color: lightblue; border-radius: 30px;">
+        <div class="product-card" style="border:1px solid #ccc; padding:30px; width:600px; background-color: white; border-radius: 30px;">
             <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" style="width:100%; height:auto;">
             <h3>{{ $product->name }}</h3>
             <p>Автор: {{ $product->author }}</p>
@@ -28,6 +28,8 @@
     {{-- <a href="{{ route('products.create') }}" class="btn btn-primary mb-3">Добавить товар</a> --}}
 
     <h4>Конец каталога.</h4>
+
+    <a href="{{ route('about') }}" class="btn btn-primary">Об авторе</a>
 
     @if(session('success'))
         <div class="alert alert-success">
