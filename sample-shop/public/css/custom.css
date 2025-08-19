@@ -2,7 +2,10 @@
 body {
     font-family: Arial Black !important;
     background-color: #a4ece0 !important; 
-    color: #333 !important; 
+    color: #000000 !important; 
+    text-align: center !important;
+    font-family: Arial Black !important;
+    font-size: 20px !important;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -99,8 +102,6 @@ p {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
-    text-align: center !important;
-    margin-left: 450px;
     width: 400px;
 }
 
@@ -187,4 +188,6 @@ card-body {
 form-check {
     text-align: center;
     padding-right: 20px !important;
+
 }
+

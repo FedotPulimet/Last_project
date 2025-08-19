@@ -29,7 +29,7 @@
 
     <h4>Конец каталога.</h4>
 
-    <a href="{{ route('about') }}" class="btn btn-primary">Об авторе</a>
+    <a href="{{ route('about') }}" class="btn btn-primary">Об авторах</a>
 
     @if(session('success'))
         <div class="alert alert-success">
