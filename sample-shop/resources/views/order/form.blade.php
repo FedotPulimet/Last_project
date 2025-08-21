@@ -1,6 +1,8 @@
+@extends('layouts.app')
 
- <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-<h2>Оформление заказа</h2>
+ @section('content')
+     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <h2>Оформление заказа</h2>
 <form action="{{ route('order.submit') }}" method="POST">
     @csrf
     <h2>Для того чтобы приобрести картину выбирите один из удобных вам вариантов: </h2>
@@ -11,8 +13,8 @@
     <h2>2. Написать на почту: </h2>
     <p>Почта: zhfedor33@gmail.com</p>
 
+ </form>
 
-</form>
+    <h3>Спасибо за то что выбрали наш магазин!</h3>
 
-<h3>Спасибо за то что выбрали наш магазин!</h3>
-
+@endsection

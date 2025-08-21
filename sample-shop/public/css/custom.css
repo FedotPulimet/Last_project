@@ -1,7 +1,6 @@
 
 body {
     font-family: Arial Black !important;
-    background-color: #a4ece0 !important; 
     color: #000000 !important; 
     text-align: center !important;
     font-family: Arial Black !important;
@@ -134,7 +133,8 @@ h4 {
 }
 
 .bg-white {
-    background-color: bisque !important;
+   background: linear-gradient(to bottom right, #C2B799, bisque);
+     
 }
 
 button {
@@ -178,6 +178,10 @@ h3 {
 
 body {
   background: linear-gradient(to bottom right, bisque, #a4ece0);
+}
+
+body {
+    background-attachment: fixed;
 }
 
 card-body {
