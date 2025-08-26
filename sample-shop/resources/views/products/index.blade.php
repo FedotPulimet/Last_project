@@ -6,10 +6,10 @@
 @section('content')
 <div class="container my-5">
     <h1 class="mb-4">Каталог товаров</h1>
-    <div class="product-list" style="display:flex; flex-wrap:wrap; gap:90px; border-radius: 30px; ">
+    <div class="product-list" style="display:flex; flex-wrap:wrap; gap:90px;  border-radius: 30px; ">
     @foreach($products as $product)
-        <div class="product-card" style="border:1px solid #ccc; padding:30px; width:600px; background-color: white; border-radius: 30px;">
-            <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" style="width:90%; height:400px;">
+        <div class="product-card" style="border:1px solid #ccc; padding:30px; width:600px; background-color: white; border-radius: 30px; ">
+            <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" style="width:90%; height:400px; border-radius: 5px;">
             <h3>{{ $product->name }}</h3>
             <p>Автор: {{ $product->author }}</p>
             <p> {{ $product->description }}</p>
