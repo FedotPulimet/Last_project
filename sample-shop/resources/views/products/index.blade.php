@@ -23,14 +23,7 @@
     @endforeach
 </div>
 
-
-    {{-- Кнопка для добавления нового товара (если есть права) --}}
-    {{-- <a href="{{ route('products.create') }}" class="btn btn-primary mb-3">Добавить товар</a> --}}
-
-        <a href="{{ route('about') }}" class="btn btn-primary">Об авторах</a>
-
-
-    <h4>Конец каталога.</h4>
+    <a href="{{ route('about') }}" class="btn btn-primary">Об авторах</a>
 
     @if(session('success'))
         <div class="alert alert-success">

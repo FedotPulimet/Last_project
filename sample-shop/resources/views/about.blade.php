@@ -17,7 +17,7 @@
      <p1>Екатерина охотно сотрудничает с дизайнерами, менеджерами интерьерных салонов.</p1>
      <p1>В 2009 году Екатерина переезжает в г.Королёв МО. Каждый новый проект для художников - это источник вдохновения, возможность поновому проявить себя.</p1>
      
-     <img src = "images/products/more.jpg" style= "width: 30%; height: 400px; margin-top: 40px; border-radius: 30px; "
+     <img src = "images/Author/ekaterina.jpg" style= "width: 25%; height: 500px; margin-top: 40px; border-radius: 30px; ">  <img src = "images/products/more.jpg" style= "width: 25%; height: 500px; margin-top: 40px; border-radius: 30px; margin-left: 60px; ">
 </div>
 @endsection
 
