@@ -95,17 +95,16 @@ p {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 80px;
-    background-color: #64baf3 !important; 
-    color: #fff;
-    text-decoration: none;
+    background-color: #C2B799 !important; 
+    color: #000000 !important;
+    text-decoration: solid;
     border-radius: 4px;
-    transition: background-color 0.3s;
-    width: 600px !important;
+    transition: background-color 0.8s !important;
+    width: 200px !important;
 }
 
 .btn:hover {
-    background-color: #57b0f0; 
+    background-color: #f3f4f5 !important; 
 }
 
 .product-list {
@@ -118,9 +117,14 @@ p {
 }
 
 a {
-    background-color: #a4ece0;
-    border-radius: 30px;
-    font-size: 20px !important;
+    background-color: #a4ece0 !important;
+    border-radius: 10px;
+    font-size: 25px !important;
+    transition: background-color 0.8s;
+}
+
+a:hover {
+    background-color: #f3f4f5 !important; 
 }
 
 h4 {
@@ -142,6 +146,11 @@ button {
     border-radius: 30px !important;
     font-family: serif !important;
     background-color: #cee2f0;
+    transition: background-color 0.8s;
+}
+
+button:hover {
+    background-color: #e0d4ab !important; 
 }
 
 .nav-link {

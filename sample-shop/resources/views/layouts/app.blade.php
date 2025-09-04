@@ -42,7 +42,7 @@
                                 
                             @endif
 
-
+                         <a href="{{ route('about') }}" class="btn btn-primary">Об авторах</a>
                             
                             @if (Route::has('register'))
                                

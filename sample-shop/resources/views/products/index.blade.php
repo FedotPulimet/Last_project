@@ -1,7 +1,4 @@
-
-
 @extends('layouts.app')
-
 
 @section('content')
 <div class="container my-5">
@@ -23,7 +20,7 @@
     @endforeach
 </div>
 
-    <a href="{{ route('about') }}" class="btn btn-primary">Об авторах</a>
+<h4>Конец каталога.</h4>
 
     @if(session('success'))
         <div class="alert alert-success">
